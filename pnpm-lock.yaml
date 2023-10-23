@@ -1008,8 +1008,8 @@ importers:
         specifier: 5.1.0
         version: 5.1.0(prisma@5.1.0)
       '@textea/json-viewer':
-        specifier: 3.1.1
-        version: 3.1.1(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@mui/material@5.14.14)(react-dom@18.2.0)(react@18.2.0)
+        specifier: 3.2.2
+        version: 3.2.2(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@mui/material@5.14.14)(@types/react@18.2.22)(react-dom@18.2.0)(react@18.2.0)
       hookable:
         specifier: 5.5.3
         version: 5.5.3
@@ -11922,8 +11922,8 @@ packages:
       - '@vue/server-renderer'
     dev: true
 
-  /@textea/json-viewer@3.1.1(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@mui/material@5.14.14)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-eaYwufnvQhlbdeWdqhERdp4yOKp2bILiMOGKIRBFoFpg3ry6L06GcdNFffe15C8T+2F/vUUEtLVpZ9i5f8NUrw==}
+  /@textea/json-viewer@3.2.2(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@mui/material@5.14.14)(@types/react@18.2.22)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-CnAuqAvfIB2HBqjceSIsmJ6JNKP6FDEB40lKEC+4d0P8BnWZu0U9PQshL3vY14pwMiU6uBRIgPRlCT4WH7xnMg==}
     peerDependencies:
       '@emotion/react': ^11
       '@emotion/styled': ^11
@@ -11934,12 +11934,13 @@ packages:
       '@emotion/react': 11.11.1(@types/react@18.2.22)(react@18.2.0)
       '@emotion/styled': 11.11.0(@emotion/react@11.11.1)(@types/react@18.2.22)(react@18.2.0)
       '@mui/material': 5.14.14(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.22)(react-dom@18.2.0)(react@18.2.0)
-      clsx: 1.2.1
+      clsx: 2.0.0
       copy-to-clipboard: 3.3.3
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      zustand: 4.3.8(react@18.2.0)
+      zustand: 4.4.4(@types/react@18.2.22)(react@18.2.0)
     transitivePeerDependencies:
+      - '@types/react'
       - immer
     dev: false
 
@@ -33547,18 +33548,22 @@ packages:
   /zod@3.22.3:
     resolution: {integrity: sha512-EjIevzuJRiRPbVH4mGc8nApb/lVLKVpmUhAaR5R5doKGfAnGJ6Gr3CViAVjP+4FWSxCsybeWQdcgCtbX+7oZug==}
 
-  /zustand@4.3.8(react@18.2.0):
-    resolution: {integrity: sha512-4h28KCkHg5ii/wcFFJ5Fp+k1J3gJoasaIbppdgZFO4BPJnsNxL0mQXBSFgOgAdCdBj35aDTPvdAJReTMntFPGg==}
+  /zustand@4.4.4(@types/react@18.2.22)(react@18.2.0):
+    resolution: {integrity: sha512-5UTUIAiHMNf5+mFp7/AnzJXS7+XxktULFN0+D1sCiZWyX7ZG+AQpqs2qpYrynRij4QvoDdCD+U+bmg/cG3Ucxw==}
     engines: {node: '>=12.7.0'}
     peerDependencies:
+      '@types/react': '>=16.8'
       immer: '>=9.0'
       react: '>=16.8'
     peerDependenciesMeta:
+      '@types/react':
+        optional: true
       immer:
         optional: true
       react:
         optional: true
     dependencies:
+      '@types/react': 18.2.22
       react: 18.2.0
       use-sync-external-store: 1.2.0(react@18.2.0)
     dev: false

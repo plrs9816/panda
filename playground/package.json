@@ -27,7 +27,7 @@
     "@pandacss/preset-base": "workspace:*",
     "@pandacss/preset-panda": "workspace:*",
     "@prisma/client": "5.1.0",
-    "@textea/json-viewer": "3.1.1",
+    "@textea/json-viewer": "3.2.2",
     "hookable": "5.5.3",
     "merge-anything": "5.1.7",
     "monaco-editor": "0.40.0",
